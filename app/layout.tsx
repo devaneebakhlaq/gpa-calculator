@@ -79,6 +79,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/ntu-logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/ntu-logo.png" />
         <meta name="theme-color" content="#081d2b" />
+        <meta
+          name="google-site-verification"
+          content="iu5BdCgr_6iPGqbadNTpZX9An2oLnuWKQUSVXOZSxIc"
+        />
         {/* Google tag (gtag.js) - placed immediately after <head> */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
