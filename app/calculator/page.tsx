@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import Image from "next/image";
 import logoImg from "../../National_Textile_University_Logo.png";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,51 +7,6 @@ import React, { useEffect, useState, useCallback, memo } from "react";
 import { ScrollProgress, FloatingParticles, BackToTop } from "../components/interactive";
 import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
-
-export const metadata: Metadata = {
-  title: "NTU GPA Calculator — Calculate Semester GPA Online",
-  description:
-    "NTU GPA Calculator helps National Textile University students compute semester GPA using the official 2017+ absolute grading system. Enter subjects, credit hours, and marks to get instant GPA, grade points, and academic standing.",
-  keywords: [
-    "NTU GPA calculator",
-    "NTU semester GPA",
-    "GPA calculator online",
-    "National Textile University GPA",
-    "NTU grade point average",
-    "NTU grade calculator",
-    "semester GPA estimator",
-    "NTU academic calculator",
-    "grade points calculator",
-    "GPA tracker",
-  ],
-  openGraph: {
-    title: "NTU GPA Calculator — Calculate Semester GPA Online",
-    description:
-      "NTU GPA Calculator helps National Textile University students compute semester GPA using the official 2017+ absolute grading system.",
-    url: "/calculator",
-    siteName: "NTU GPA Calculator",
-    type: "website",
-    images: [
-      {
-        url: "/ntu-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "NTU GPA Calculator",
-      },
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-    },
-  },
-};
 
 /* ── NTU Absolute Grading System (New – Table 2, 2017 onwards) ── */
 interface GradeInfo {

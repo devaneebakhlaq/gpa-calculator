@@ -338,6 +338,48 @@ export default function Home() {
           </motion.div>
         </section>
 
+        <section className="mx-auto w-full max-w-7xl px-5 py-8 md:px-10 md:py-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.55 }}
+            className="glass-card rounded-3xl p-8 md:p-10"
+          >
+            <span className="section-badge mb-4">
+              <span className="pulse-dot" />
+              SEO CONTENT
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl">
+              Calculate NTU Semester GPA with a Fast and Reliable Online Tool
+            </h2>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--text-soft)]">
+              Our NTU GPA calculator helps students at the National Textile University calculate semester GPA, grade points, and academic standing with the official absolute grading system. Enter credit hours, marks, and subjects to get results instantly.
+            </p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {[
+                {
+                  title: "Fast Semester GPA Results",
+                  text: "Get instant GPA estimates for any subject combination using the NTU grading scale.",
+                },
+                {
+                  title: "Credit Hour Planning",
+                  text: "Compare course loads and calculate total credit hours for smarter semester planning.",
+                },
+                {
+                  title: "Grade Point Tracking",
+                  text: "Track your grade points and standing with a clear, student-friendly GPA calculator experience.",
+                },
+              ].map((item) => (
+                <article key={item.title} className="rounded-2xl border border-[var(--line)] bg-[var(--surface)]/60 p-5">
+                  <h3 className="font-semibold text-[var(--text-main)]">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--text-soft)]">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </motion.div>
+        </section>
+
         <section id="features" className="mx-auto w-full max-w-7xl px-5 py-14 md:px-10 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
